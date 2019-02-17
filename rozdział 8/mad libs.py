@@ -18,13 +18,13 @@ przymiotnik_re = find.replace("PRZYMIOTNIK",str(przymiotnik_new))
 rzeczownik_re = przymiotnik_re.replace("RZECZOWNIK",str(rzeczownik_new), 1) #tak jak wspominałem, myślałem, że są dwa rzeczowniku, tutaj zamieniamy pierwszy
 czasownik_re = rzeczownik_re.replace("CZASOWNIK",str(czasownik_new))
 rzeczownik_2_re = czasownik_re.replace("RZECZOWNIK",str(rzeczownik_2_new))
-text = rzeczownik_2_re
+new_text = rzeczownik_2_re
 
 file.close()
 
-print(text)
+print(new_text)
 
 #tutaj następuje podmiana wartości w pliku
 file = open("c:\\users\\user\\desktop\\python_nauka\\mad_lips.txt", "w")
-file.write(text)
+file.write(new_text)
 file.close()
