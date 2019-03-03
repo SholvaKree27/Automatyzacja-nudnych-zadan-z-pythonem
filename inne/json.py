@@ -9,5 +9,5 @@ type(open19)
 
 n = 0
 for x in open19["leaderboardRows"][n]["entrant"]["height"]:
-    print(open19["leaderboardRows"][0]["entrant"]["competitorName"],open19["leaderboardRows"][n]["entrant"]["height"],open19["leaderboardRows"][n]["scores"][0]["scoreDisplay"])
+    print(open19["leaderboardRows"][n]["entrant"]["competitorName"],open19["leaderboardRows"][n]["entrant"]["height"],open19["leaderboardRows"][n]["scores"][0]["scoreDisplay"])
     n = n+1
